@@ -18,27 +18,51 @@ int ooo(int a,int b){
     if (a==0 && b ==0){
         return 0;}
     return 1;}
-void recorer(int && m,a){
-    for(i=0,i<a,i++){
-        if (m[a]=="&"){
-            m[a-1] * m[a+1]
-        }
-        if (m[a]=="|"){
-            m[a+1]+ m[a-1]}
-        if (m[a]=="^"){
-            m[a+1]-m[a-1]
-        }
-        if(m[a]=="~"){
-        if(m[a+1]==1){
-                m[a+1]=0
-        }
-        else {m[a+1]=1}
+void tabla(int& A, int& B,int& C,int& D){
+    for(int i=0;i<2;i++){
+            if(i==0){
+                A=0;}
+            else {
+                A=1;
+            }for(int i=0;i<2;i++){
+                if(i==0){
+                B=0;}
+                else {
+                B=1;
+    }                for(int i=0;i<2;i++){
+                        if(i==0){
+                        C=0;}
+                        else {
+                            C=1;}
+                        for(int i=0;i<2;i++){
+                            if(i==0){
+                            D=0;}
+                            else {
+                            D=1;}
+                        void recorer(int,int);
+                        cout<<"|"<<A<<"|"<<B<<"|"<<C<<"|"<<D<<"|"<<endl;
+    }
+    }
+
     }}}
 int main(){
 cout<<"ingresa el tamaño de tu problema logico"<<endl;
 cin>>a;
 int m[a];
+cout<<"ingresa tu problema logico"<<endl;
 cin>>m[a];
-cout<<m[a]<<endl;
-return 0;}
+void recorer(int m[] ,int a){
+    for(int i=0;i<a;i++){
+        if (m[a]=="&"){
+            m[a-1] * m[a+1];}
+        if (m[a]=="|"){
+            m[a+1]+ m[a-1];}
+        if (m[a]=="^"){
+            m[a+1]-m[a-1];}
+        if(m[a]=="~"){
+            if(m[a+1]==1){
+                m[a+1]=0;
+        }
+            else {m[a+1]=1;}}}}
+return 0; }
 
