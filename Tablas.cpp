@@ -18,8 +18,22 @@ int ooo(int a,int b){
     if (a==0 && b ==0){
         return 0;}
     return 1;}
-void recorer(m){
-    for(i=0,i<)}
+void recorer(int && m,a){
+    for(i=0,i<a,i++){
+        if (m[a]=="&"){
+            m[a-1] * m[a+1]
+        }
+        if (m[a]=="|"){
+            m[a+1]+ m[a-1]}
+        if (m[a]=="^"){
+            m[a+1]-m[a-1]
+        }
+        if(m[a]=="~"){
+        if(m[a+1]==1){
+                m[a+1]=0
+        }
+        else {m[a+1]=1}
+    }}}
 int main(){
 cout<<"ingresa el tamaño de tu problema logico"<<endl;
 cin>>a;
